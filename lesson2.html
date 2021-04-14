@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .header{
+            padding: 200px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .cube{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red; 
+        }
+        
+        .box__orange,
+        .box__blue,
+        .box__green,
+        .box__violet{
+            width: 400px;
+            height: 150px;
+            border: 1px solid red;  
+            position: relative;
+        }
+        .box__orange{
+            background: orange;
+        }
+        .box__green{
+            left: 200px;
+            background: green;
+        }
+        .box__blue{
+            left: 400px;
+            background: blue;
+        }
+        .box__violet{
+            left: 600px;
+            background: violet;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="cube">
+            <div class="box__orange"></div>
+            <div class="box__green"></div>
+            <div class="box__blue"></div>
+            <div class="box__violet"></div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
