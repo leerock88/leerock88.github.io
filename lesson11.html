@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cadetblue;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .container{
+            width: 300px;
+            height: 33.3vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .first{
+            background-color: darkgreen;
+        }
+        .second{
+            background-color: darkorange;
+        }
+        .third{
+            background-color: blueviolet;
+        }
+        .first:hover,
+        .second:hover,
+        .third:hover{
+            animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)both;
+        }
+        @keyframes scale-up-hor-left {
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container first">
+        <h3>Новости</h3>
+    </div>
+    <div class="container second">
+        <h3>Картинки</h3>
+    </div>
+    <div class="container third">
+        <h3>Информация</h3>
+    </div>
+</body>
+</html>
