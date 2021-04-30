@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rosybrown;
+        }
+        .container{
+            width: 300px;
+            height: 180px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: royalblue;
+            animation: scale-up-center 0.8s 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        /* .container:hover{
+            animation: scale-up-center 1s 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        @keyframes scale-up-center{
+            to {
+            width: 420px;
+            height: 280px;
+            }
+        }        */
+        @keyframes scale-up-center{
+            to {
+            width: 420px;
+            height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Привет Мир!</p>
+    </div>
+</body>
+</html>
