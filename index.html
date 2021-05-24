@@ -3,10 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background-color: #D5D7E7;
+            padding: 60px;
+            width: 100%;
+            height: 100vh;
+        }
+        .head{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 100%;
+
+        }
+        .head__up,
+        .head__down{
+            width: 100%;
+            min-height: 300px;
+            background-color: #ECF5F4;
+            padding: 40px 80px;
+            /* border: 1px solid red; */
+            
+            
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'arial';
+            color: #787879;
+            font-weight: 700;
+            font-size: 14px;
+
+        }
+        .list{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            margin-right: 30px;  
+        }
+        a{
+            color: #787879;
+            transition: 0.5s;
+        }
+        a:hover{
+            color: #052A44;
+        }
+        h3{
+            margin-left: -120px;
+            font-size: 25px;
+        }
+        h3,
+        p a{
+            color: #052A44;
+        }
+        .menu__left{
+            margin-top: 80px;
+            width: 550px;
+            min-height: auto;
+        }
+        h2{
+            font-family: 'arial';
+            font-weight: 700;
+            color: #052A44;
+            font-size: 90px;
+            line-height: 100px;
+        }
+        .menu__left p{
+            font-family: 'arial';
+            font-weight: 400;
+            font-size: 25px;
+            color: #787879;
+            line-height: 45px;
+            margin-top: 50px;
+        }
+        input{
+            margin-top: 50px;
+            width: 150px;
+            height: 60px;
+            background-color: #F64F01;
+            border: none;
+            font-style: 'arial';
+            font-weight: 400;
+            color: white;
+            font-size: 15px;
+        }
+        .percents{
+            width: 100%;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pers__text{
+            width: 100px;
+            min-height: 100px;
+            line-height: 1px;
+        }
+        .pers__text h4{
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 70px;
+            color: #052A44;
+        }
+        .pers__text p{
+            font-family: 'arial';
+            font-weight: 400;
+            font-size: 20px;
+            color: #052A44; 
+            line-height: 30px;
+            margin-bottom: 150px;
+        }
+        .head__up--left{
+            display: flex;
+        }
+        .cube{
+            background-color: wheat ;
+            margin: 180px 0 0 200px;
+            padding: 10px;
+            width: 200px;
+            min-height: 120px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 15px;
+            
+
+        }
+        .up,
+        .down{
+            display: flex;
+            justify-content: space-between;           
+        }
+        .line{
+            width: 40%;
+            height: 10px;
+            background-color: tomato;
+        }
+        .down{
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 25px;
+            color: #052A44; 
+        }
+        .up{
+            font-family: 'arial';
+            font-weight: 400;
+            font-size: 15px;
+            color: #787879;
+        }
+        .head__down{
+            background-color: #FEFEFE;
+        }
+        .card{
+            margin-top: -200px;
+            width: 32%;
+            min-height: 80px;
+            /* border: 1px solid red; */
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+        .card p,
+        .right__section p{
+            font-family: 'arial';
+            font-weight: 400;
+            font-size: 25px;
+            color: #787879;
+        }
+        .card__in{
+            padding: 27px 20px;
+        }
+        .card__in h4{
+            margin-top: 20px;
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 65px;
+            color: #052A44;
+        
+        }
+        .card__in p{
+            margin-top: 55px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        .long__line{
+            width: 100%;
+            height: 10px;
+            background-color: tomato;                
+        }
+        .long__line{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .up__section{
+            display: flex;
+            justify-content: space-between;
+        }
+        .down__section{
+            margin-top: 250px;
+            width: 100%;
+            min-height: auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .foot{
+            margin: 70px 40px;
+        }
+        .foot p{
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 18px;
+            color: #052A44; 
+            margin: 45px 0;
+        }
+        .left__section,
+        .center__section,
+        .right__section{
+            width: 31%;
+            height: 800px;
+            /* border: 1px solid red; */
+            background-color: whitesmoke
+        }
+        .left__section{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .right__section h4{
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 50px;
+            color: #052A44;
+        }
+        .right__section p{
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .dog{
+            display: flex;
+            margin-top: 45px;
+            align-items: center;
+            
+        }
+        .dog h5{
+            margin-right: 40px;
+            font-family: 'arial';
+            font-weight: 700;
+            font-size: 20px;
+            color: #052A44;
+        }
+        .dog__img{
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            border-radius: 50%;
+            background-color: antiquewhite;
+            object-fit: cover;
+            background-position: center;
+        }
+        .andlast{
+            margin-top: 15px;
+            display: flex;
+            width: 400px;
+            min-height: 30px;
+        }
+        .andlast P{
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .stick{
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 150px;
+            height: 5px;
+            background-color:#052A44;
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 <body>
-   <h1>Привет мир!</h1> 
+    <div class="head">
+        <div class="head__up">
+            <div class="menu">
+                <ol class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ol>
+                <h3>Lans.io</h3>
+                <p><a href="#">Adress</a></p>
+            </div>
+            <div class="head__up--left">
+                <div class="menu__left">
+                    <h2>Let's start something big together.</h2>
+                    <p>Sed vulputate mi sit amet mauris commodo quis imperdiet convallis a cras semper auctor.</p>
+                    <input type="button" value="Register">
+                    <div class="percents">
+                        <div class="pers__text">
+                            <h4>30+</h4>
+                            <p>Years of Excellent</p>
+                        </div>
+                        <div class="pers__text">
+                            <h4>53К</h4>
+                            <p>Case of Completed</p>
+                        </div>
+                        <div class="pers__text">
+                            <h4>100%</h4>
+                            <p>Client Statisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu__right">
+                    <div class="cube">
+                        <div class="up">
+                            <p>Month Stats</p>
+                            <p>2019</p>
+                        </div>
+                        <div class="down">
+                            <h5>+2.4%</h5>
+                            <h5>$648</h5>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="head__down">
+            <div class="up__section">
+
+                <div class="card">
+                    <p>01</p>
+                    <div class="text__long">
+                        <div class="card__in">
+                            <h4>Consumer Insights</h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluplate velit esse cillium dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <span class="long__line"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>02</p>
+                    <div class="text__long">
+                        <div class="card__in">
+                            <h4>Emerging Ideas</h4>
+                            <p>In egestas aret imperdiet sed euismod nisi porta lorem mollis.At lectus urma duis</p>
+                        </div>
+                        <span class="long__line"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>03</p>
+                    <div class="text__long">
+                        <div class="card__in">
+                            <h4>Thought Leadership</h4>
+                            <p>Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero</p>
+                        </div>
+                        <span class="long__line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="down__section">
+                <div class="left__section">
+                    <div class="foot">
+                        <img src="" alt="Картинка">
+                        <p><a href="#">Vision</a></p>
+                    </div>
+                    <div class="foot">
+                        <img src="" alt="Картинка">
+                        <p><a href="#">Missions</a></p>
+                    </div>
+                    <div class="foot">
+                        <img src="" alt="Картинка">
+                        <p><a href="#">Goals</a></p>
+                    </div>
+                </div>
+                <div class="center__section">
+                    <img src="" alt="Думающий парень">
+                </div>
+                <div class="right__section">
+                    <h4>Benefits of wellbeing and positive employee</h4>
+                    <p>Diam vulputate ut pharetre sit amet aliquam.Rhoncus est pellentesque elit ullamcorper</p>
+                    <input type="button" value="Register">
+                    <div class="dog">
+                        <div class="dog__img"><img src="" alt="песик"></div>
+                        <h5>San'tosan Jaya Abadi</h5>
+                    </div>
+                    <div class="andlast">
+                        <span class="stick"></span>
+                        <p>Tellus rutrum tellus pellentesque eu tincidunt tortor.Morbi tincidunt ornare massa eget egestas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
