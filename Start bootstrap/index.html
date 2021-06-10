@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial;
+            color: white;
+        }
+/* Upper */
+        .upper{
+            background-color: #2C3E50;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            width: 65%;
+            font-family: Arial;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .menu > ol{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .menu > a > h1{
+            color: white;
+            font-weight: 700;
+        }
+        .menu > ol > li > a{
+            margin-left: 40px;
+            font-weight: 700;
+            color: white;
+            transition: 0.3s linear;
+        }
+        .menu > ol > li > a:hover{
+            color: #1ABC9C;
+        }
+/* Upper END */
+
+/* Header */
+        .header{
+            height: 700px;
+            background-color: #1ABC9C;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boot{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-family: Arial;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            background-image: url(Img/png-transparent-cartoon-illustration-laughing-boy-child-painted-photography.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .boot > h1{
+            font-weight: 700;
+            font-size: 70px;
+            margin-bottom: 28px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 28px;
+        }
+        span{
+            width: 120px;
+            height: 5px;
+            background-color: white;
+            border-radius: 5px;
+            margin: 0 20px;
+            
+        }
+        .boot > p{
+            font-size: 20px;
+        }
+/* Header END */
+
+/* Section */
+        .section{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .up_section{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .up_section > h1{
+            color: #2C3E50;
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 26px;
+        }
+        .sec > span{
+            background-color: #2C3E50;
+        }
+        .sec{
+            margin-bottom: 30px;
+        }
+        .down_section{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 1200px;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .box{
+            position: relative;
+            margin: 15px;
+            width: 350px;
+            height: 270px;
+            border-radius: 8px;
+            /* border: 1px solid red;   */
+            cursor: pointer;    
+            box-shadow: 0px 1px 21px -2px rgba(26, 188, 156, 1);
+       }
+       .card_photo{
+           width: 100%;
+           height: 100%;
+       }
+       .shadow{
+           /* border-radius: 8px; */
+           width: 100%;
+           height: 100%;
+           background-color: rgba(26, 188, 156, 0.9);
+           position: absolute;
+           top: 0;
+           left: 0;
+           opacity: 0;
+           transition: opacity 0.2s linear;
+       }
+       .box:hover .shadow{
+           opacity: 1;
+       }
+/* Section END */
+
+/* About */
+       .about{
+           min-height: 150px;
+           background-color:#1ABC9C ;
+           display: flex;
+           justify-content: center;
+       }
+       .about_section{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .about_section > h1{
+           font-weight: 700;
+           font-size: 60px;
+           margin-top: 80px;
+           margin-bottom: 40px;
+
+       }
+       .text{
+           min-height: 150px;
+           width: 900px;
+           display: flex;  
+           justify-content: space-between;
+       }
+       .left_text,
+       .right_text{
+           width: 400px;
+           min-height: auto;
+           font-size: 20px;
+           line-height: 30px;
+           margin-bottom: 40px;
+       }
+       .about_section a{
+           font-size: 20px;
+           border: 2px solid white;
+           padding: 20px 30px;
+           border-radius: 7px;
+           margin-bottom: 80px;
+           transition: 0.4s linear;
+       }
+       .about_section > a:hover{
+            background-color: white;
+            color: black;
+       }
+/* About END */
+/* Contact */
+form{
+    width: 650px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 70px;
+    margin-bottom: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+}
+input:nth-of-type(4n){
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.button__send{
+    width: 630px;
+    margin-bottom: 100px;
+    
+}
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    color: white;
+    background-color: #6BD4BF;
+    border-radius: 4px;
+    font-size: 20px;
+    
+}
+/* Contact END */
+/* Upper__low */
+.upper__low{
+    width: 100%;
+    min-height: 120px;
+    background-color: #2C3E50;
+}
+.text__boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text__boxes > .boxes > h2{
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.text__boxes > .boxes > p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.colored{
+    color: #24BC9C;
+    text-decoration: underline;
+}
+.boxes{
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/* Upper__low END */
+
+/* end low */
+.end__low{
+    background-color: #1A252F;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+/* end low END */
+    </style>
+
+
+
+
+
+</head>
+<body>
+<!-- Upper -->
+    <div class="upper">
+        <div class="menu">
+            <a href="#"><h1>start bootstrap</h1></a>
+            <ol>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ol>
+        </div>
+    </div>
+<!-- Upper END -->
+
+<!-- Header -->
+    <div class="header">
+        <div class="boot">
+            <div class="img"></div>
+            <h1>START BOOTSTRAP</h1>
+            <div class="logo">
+                <span></span>
+                <img src="Img/star.svg" alt="">
+                <span></span>
+            </div>
+            <p>Graphic Artist - Web Designer - Illustrator</p>
+        </div>
+    </div>
+<!-- Header END -->
+
+<!-- Section -->
+    <div class="section">
+        <div class="up_section">
+            <h1>PORTFOLIO</h1>
+            <div class="logo sec">
+                <span></span>
+                <img src="Img/star.svg" alt="">
+                <span></span>
+            </div>
+        </div>
+        <div class="down_section">
+            <div class="container">
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-1.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-2.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-3.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-4.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-5.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="box">
+                    <img class="card_photo" src="Img/cart-6.jpg" alt="">
+                    <div class="shadow"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Section END -->
+
+<!-- Footer --------------------------------------------->
+    <div class="about">
+        <div class="about_section">
+            <h1>ABOUT</h1>
+            <div class="logo">
+                <span></span>
+                <img src="Img/star.svg" alt="">
+                <span></span>
+            </div>
+            <div class="text">
+                <div class="left_text">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                </div>
+                <div class="right_text">
+                    <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+            <a href="#">Free Download!</a>
+        </div>
+    </div>
+<!-- Footer END ----------------------------------------->
+
+<!-- Contact -------------------------------------------->
+<div class="contact">
+    <div class="up_section">
+        <h1>PORTFOLIO</h1>
+        <div class="logo sec">
+            <span></span>
+            <img src="Img/star.svg" alt="">
+            <span></span>
+        </div>
+    <form action="">
+        <input id="name" type="text" placeholder="Enter your name">
+        <input id="email" type="email" placeholder="name@example.com">
+        <input id="phone" type="tel" placeholder="(123)456-7890)">
+        <input id="message" type="text" placeholder="Enter your message here...">
+
+    </form>
+    <div class="button__send">
+        <a class="send" href="#!">Send</a>
+    </div>
+</div>
+</div>
+<!-- Contact END ---------------------------------------->
+
+<!-- upper__low -->
+<div class="upper__low">
+    <div class="text__boxes">
+        <div class="boxes">
+            <h2>LOCATIONS</h2>
+            <p>2215 John Daniel Drive Clark, MO 65243</p>
+        </div>
+        <div class="boxes">
+            <h2>AROUND THE WEB</h2>
+            <div class="icons">
+
+            </div>
+        </div>
+        <div class="boxes">
+            <h2>ABOUT FREELANCER</h2>
+            <p>Freelance is a free to use, MIT licenced Bootstrap theme created by <a class="colored" href="#!">Start Bootstrap</a></p>
+        </div>
+    </div>
+</div>
+<!-- upper__low END -------------------------------------->
+
+<!-- end low -->
+<div class="end__low">
+    <p>Copyright Your Website 2021</p>
+</div>
+<!-- end low END ----------------------------------------->
+</body>
+</html>
