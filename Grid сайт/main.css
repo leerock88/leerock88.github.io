@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 28.125% 25.3125% 18.4375% 4.8958% 23.2292%;
+    /* grid-template-columns: 540px 486px 354px 94px 446px; */
+    grid-template-rows: 270px 270px 282px 137px 121px;
+}
+.image__2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(img/image_2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.life{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: #F4FA9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 56px;
+}
+.div__life{
+    width: 120px;
+    height: 5px;
+    background: #64ADD4;
+}
+.life > p{
+    font-size: 85px;
+    font-weight: 400;
+    font-family: "Princess Sofia";
+    color: #64ADD4;
+    margin: 0 33px;
+}
+.menu{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #581B98;
+    display: flex;
+    position: relative;
+}
+.menu > p{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 114px;
+    color: white;
+}
+.menu > p:nth-of-type(1n){
+    margin: 96px 492px 60px 750px;
+    position: absolute;
+}
+.menu > p:nth-of-type(2n){
+    margin: 96px 252px 60px 980px;
+    position: absolute;
+}
+.menu > h3{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 149px;
+    color: white;
+    margin: 61px 0 60px 63px;
+}
+.hamburger{
+    margin: 123px 86px 87px 1214px;
+    position: absolute;
+}
+.hamburger > div{
+    width: 80px;
+    height: 10px;
+    background: white;
+}
+.hamburger > div:nth-of-type(2n){
+    margin: 15px 0;
+}
+.text{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.text > p{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 53px;
+    color: black;
+    margin: 59px 40px 308px 63px;
+}
+.personal{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #F4FA9C;
+}
+.personal > p{
+    font-family: "Princess Sofia";
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 131px;
+    color: #FF304F;
+    margin: 82px 192px 57px 155px;
+}
+.image__1{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 3;
+    background: url(img/image_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.expression{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background: white;
+}
+.expression > p{
+    font-family: "Princess Sofia";
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 131px;
+    color: #FF304F;
+    margin: 0 46px 6px 75px;
+}
